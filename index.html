@@ -3,99 +3,281 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>氏名 | Research Homepage</title>
-  <meta name="description" content="氏名の研究者ホームページ">
-  <link rel="stylesheet" href="style.css">
+  <title>[ゼミ名] | Seminar</title>
+  <meta name="description" content="[氏名] のゼミに関する案内ページです。ゼミ概要，研究テーマ，進め方，参加希望者向け情報，現役ゼミ生向け情報を掲載しています。">
+  <meta name="theme-color" content="#f8fbff">
+
+  <!-- CSS の場所に合わせて，必要なら ../style.css に変更してください -->
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
   <div class="container">
 
-    <header class="hero">
-      <img src="images/profile.jpg" alt="プロフィール写真" class="profile">
-      <div>
-        <h1>氏名 / Name</h1>
-        <p class="affiliation">所属・職名</p>
-        <p>
-          研究分野：ベイズ計量経済学，経済統計，時系列分析
+    <header class="site-header">
+      <div class="site-header-inner">
+        <p class="site-title">
+          <a href="../index.html">[氏名] | Research Homepage</a>
         </p>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#publications">Publications</a>
-          <a href="#talks">Talks</a>
-          <a href="#grants">Grants</a>
-          <a href="#teaching">Teaching</a>
-          <a href="#links">Links</a>
+
+        <nav class="global-nav" aria-label="Global navigation">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#publications">Publications</a>
+          <a href="../index.html#teaching">Teaching</a>
+          <a href="./index.html" aria-current="page">Seminar</a>
+          <a href="../index.html#cv">CV</a>
+          <a href="../index.html#links">Contact</a>
         </nav>
       </div>
     </header>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        ここに 4〜6 行程度の研究紹介を書きます。何を対象に，どの方法で，
-        どの分野に寄与しているのかを簡潔に記述すると読みやすくなります。
-      </p>
-      <ul>
-        <li>学位：博士（〇〇）</li>
-        <li>経歴：20XX–現在　〇〇大学 〇〇研究科 准教授</li>
-        <li>学歴：20XX　〇〇大学大学院 〇〇専攻 修了</li>
-      </ul>
-    </section>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Seminar</p>
+        <h1>[ゼミ名]</h1>
+        <p class="subtitle">
+          [分野名] を中心に，文献講読，研究発表，研究計画の形成，卒業論文・修士論文の準備を行うゼミです。
+        </p>
+        <p>
+          このページでは，ゼミの概要，扱うテーマ，進め方，参加希望者向け案内，現役ゼミ生向けの情報への導線をまとめています。
+        </p>
 
-    <section id="publications">
-      <h2>Selected Publications</h2>
-      <ol>
-        <li>
-          Author, Author, <strong>Title</strong>, Journal, Year.
-          <a href="#">DOI</a> |
-          <a href="#">PDF</a> |
-          <a href="#">Code</a>
-        </li>
-        <li>
-          Author, <strong>Title</strong>, Journal, Year.
-          <a href="#">DOI</a>
-        </li>
-      </ol>
-      <p><a href="files/cv.pdf">Full CV (PDF)</a></p>
-    </section>
+        <nav class="local-nav" aria-label="Local navigation">
+          <a href="#about">概要</a>
+          <a href="#themes">研究テーマ</a>
+          <a href="#format">進め方</a>
+          <a href="#prospective">参加希望者へ</a>
+          <a href="#current">現役ゼミ生へ</a>
+          <a href="#news">お知らせ</a>
+        </nav>
+      </section>
 
-    <section id="talks">
-      <h2>Talks</h2>
-      <ul>
-        <li>2025　Conference name，Title</li>
-        <li>2024　Workshop name，Title</li>
-      </ul>
-    </section>
+      <section id="about" class="card">
+        <h2>ゼミ概要</h2>
+        <p>
+          本ゼミでは，[分野名] に関する理論・実証・方法論を学びます。共通文献の講読を土台としながら，各自の関心に応じて研究課題を設定し，発表と議論を通じて問いの立て方，先行研究の整理，方法の選択，記述の精度を高めていきます。
+        </p>
+        <p>
+          統計的・実証的な分析に関心のある方だけでなく，制度，歴史，思想，政策などに関するテーマを，文献に基づいて論理的に深めたい方も歓迎します。最終的には，研究上の問いを自分で組み立て，根拠をもって議論できる状態を目指します。
+        </p>
 
-    <section id="grants">
-      <h2>Grants</h2>
-      <ul>
-        <li>2025–2028　科研費 若手研究　研究代表者</li>
-        <li>2024–2029　科研費 基盤研究(B)　研究分担者</li>
-      </ul>
-    </section>
+        <div class="grid-two">
+          <div>
+            <h3>基本情報</h3>
+            <ul>
+              <li>対象：学部 [3・4] 年生，大学院生 など</li>
+              <li>実施形態：対面 / ハイブリッド / オンライン</li>
+              <li>使用言語：日本語を基本とし，一部で英語文献を扱います</li>
+              <li>主な活動：文献講読，個人発表，研究相談，論文執筆</li>
+            </ul>
+          </div>
+          <div>
+            <h3>キーワード</h3>
+            <ul>
+              <li>[例：計量経済学]</li>
+              <li>[例：ベイズ統計]</li>
+              <li>[例：時系列分析]</li>
+              <li>[例：因果推論]</li>
+              <li>[例：政策評価]</li>
+              <li>[例：金融・家計・労働データ分析]</li>
+            </ul>
+          </div>
+        </div>
 
-    <section id="teaching">
-      <h2>Teaching</h2>
-      <ul>
-        <li>2024　エコノメトリクスⅠ</li>
-        <li>2024　上級計量経済Ⅱ</li>
-      </ul>
-    </section>
+        <p class="note">
+          ここでは分野をやや広めに示しています。実際には，年度ごとのメンバー構成や関心に応じて重点を調整できます。
+        </p>
+      </section>
 
-    <section id="links">
-      <h2>Links / Contact</h2>
-      <ul>
-        <li><a href="files/cv.pdf">CV</a></li>
-        <li><a href="#">researchmap</a></li>
-        <li><a href="#">KAKEN</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li>Email: your.name [at] example.ac.jp</li>
-      </ul>
-    </section>
+      <section id="themes" class="card">
+        <h2>扱う研究テーマの例</h2>
+        <p>
+          テーマ設定では，理論的な問い，実証的な問い，制度的な問いを区別しつつ，先行研究・データ・方法の対応関係を意識することを重視します。
+        </p>
 
-    <footer>
-      <p>Last updated: 2026-04-03</p>
+        <div class="grid-two">
+          <div>
+            <h3>方法論・分析枠組み</h3>
+            <ul>
+              <li>[例：回帰分析と推定]</li>
+              <li>[例：時系列モデル]</li>
+              <li>[例：ベイズ推論]</li>
+              <li>[例：機械学習と統計モデリング]</li>
+              <li>[例：実証研究の識別戦略]</li>
+            </ul>
+          </div>
+          <div>
+            <h3>応用分野</h3>
+            <ul>
+              <li>[例：金融市場の変動分析]</li>
+              <li>[例：労働・教育・家計の実証分析]</li>
+              <li>[例：企業行動や産業構造]</li>
+              <li>[例：政策効果の評価]</li>
+              <li>[例：不確実性と意思決定]</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>テーマ例</h3>
+        <ul>
+          <li>[例：金融市場のボラティリティ指標は，将来のリスク予測にどの程度寄与するか]</li>
+          <li>[例：教育投資と賃金格差の関係を，どのような識別戦略で検討できるか]</li>
+          <li>[例：政策変更前後で家計の消費行動はどのように変化したか]</li>
+          <li>[例：確率的モデルと機械学習モデルは，予測課題においてどのように比較できるか]</li>
+        </ul>
+
+        <p class="note">
+          具体的な卒論テーマは，関心分野，利用可能なデータ，方法の習熟度を踏まえて段階的に定めます。
+        </p>
+      </section>
+
+      <section id="format" class="card">
+        <h2>ゼミの進め方</h2>
+
+        <ol>
+          <li>
+            <strong>共通文献の読解</strong><br>
+            基礎概念と代表的な研究を共有し，論文の読み方と要約の仕方を確認します。
+          </li>
+          <li>
+            <strong>担当発表</strong><br>
+            各回の担当者が文献または研究計画を報告し，全員で論点と改善点を検討します。
+          </li>
+          <li>
+            <strong>研究テーマの形成</strong><br>
+            関心のある問いを先行研究，データ，方法論の観点から整理し，研究可能な形に絞り込みます。
+          </li>
+          <li>
+            <strong>執筆と改稿</strong><br>
+            中間報告や個別相談を通じて，構成，分析，図表，参考文献整理を順次洗練させます。
+          </li>
+        </ol>
+
+        <div class="grid-two">
+          <div>
+            <h3>重視する点</h3>
+            <ul>
+              <li>問いを明確に設定すること</li>
+              <li>先行研究を正確に要約すること</li>
+              <li>根拠に基づいて主張すること</li>
+              <li>図表や参考文献を丁寧に整えること</li>
+              <li>発表と議論を継続的に改善すること</li>
+            </ul>
+          </div>
+          <div>
+            <h3>推奨スキル</h3>
+            <ul>
+              <li>[例：統計学・計量経済学の基礎]</li>
+              <li>[例：英語文献を読む基礎力]</li>
+              <li>[例：R / Python / Stata の初歩]</li>
+              <li>[例：文章構成と引用の基礎]</li>
+              <li>[例：スライドまたはレジュメ作成の基礎]</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="prospective" class="card">
+        <h2>参加希望者へ</h2>
+        <p>
+          このゼミは，受動的に知識を受け取る場というより，自分で問いを立て，文献を読み，議論を通じて考えを深めていく場として設計しています。したがって，特定の知識やソフトウェア経験が現時点で十分でなくても，継続的に準備と改善を行う意思があることを重視します。
+        </p>
+
+        <h3>事前に考えておいていただきたいこと</h3>
+        <ul>
+          <li>どのようなテーマや現象に関心があるか</li>
+          <li>どのような文献やデータに取り組みたいか</li>
+          <li>継続的な発表準備に対応できるか</li>
+          <li>英語文献や分析手法の学習に取り組む意思があるか</li>
+        </ul>
+
+        <p>
+          募集時期，応募方法，事前に読んでほしい文献などの詳細は，
+          <a href="./join.html">参加希望者向け案内</a>
+          に掲載する想定です。
+        </p>
+
+        <p class="note">
+          まだ `join.html` を作成していない場合は，このリンク先を一時的に削除するか，簡易ページを先に作成してください。
+        </p>
+      </section>
+
+      <section id="current" class="card">
+        <h2>現役ゼミ生へ</h2>
+        <p>
+          現役ゼミ生向けの実務情報は，年間予定，発表順，書式，参考資料などに分けて整理するのが管理しやすいです。このページでは入口のみを示し，詳細は各ページに分離する設計にしています。
+        </p>
+
+        <div class="grid-two">
+          <div>
+            <h3>確認用ページ</h3>
+            <ul>
+              <li><a href="./schedule.html">年間予定・発表日程</a></li>
+              <li><a href="./resources.html">資料・テンプレート</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./archive.html">過去の活動記録</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>連絡上の基本事項</h3>
+            <ul>
+              <li>提出物の命名規則：[例：yyyy-mm-dd_name_topic.pdf]</li>
+              <li>提出期限：[例：発表前日 18:00]</li>
+              <li>連絡方法：[例：メール，LMS，Google Classroom]</li>
+              <li>欠席連絡：[例：事前にメールで連絡]</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="note">
+          個別の提出物，成績情報，未公表の学生原稿など，公開に適さない情報は GitHub Pages に置かず，学内限定または限定共有の環境で管理する方が適切です。
+        </p>
+      </section>
+
+      <section id="news" class="card">
+        <h2>お知らせ</h2>
+        <ul class="news-list">
+          <li>
+            <time datetime="2026-04-01">2026-04-01</time>
+            <span>[例：今年度のゼミページを更新しました。]</span>
+          </li>
+          <li>
+            <time datetime="2026-03-25">2026-03-25</time>
+            <span>[例：参加希望者向け案内を掲載しました。]</span>
+          </li>
+          <li>
+            <time datetime="2026-03-10">2026-03-10</time>
+            <span>[例：発表資料テンプレートを resources に追加しました。]</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>関連ページ</h2>
+        <div class="grid-two">
+          <div>
+            <h3>ゼミ情報</h3>
+            <ul>
+              <li><a href="./policy.html">ゼミ方針・到達目標</a></li>
+              <li><a href="./join.html">参加希望者向け案内</a></li>
+              <li><a href="./schedule.html">年間予定・発表日程</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>運営・資料</h3>
+            <ul>
+              <li><a href="./resources.html">資料・テンプレート</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./archive.html">過去の活動記録</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Last updated: 2026-04-15</p>
+      <p><a href="../index.html">研究者ホームページへ戻る</a></p>
     </footer>
 
   </div>
